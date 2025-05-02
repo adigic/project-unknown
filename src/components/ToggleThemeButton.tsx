@@ -6,8 +6,11 @@ export default function ToggleThemeButton() {
   const { mode, toggleMode } = useThemeMode();
 
   return (
+    <div className=''>
     <Button variant="outlined" onClick={toggleMode}>
       Switch to {mode === 'light' ? 'Dark' : 'Light'} Mode
     </Button>
+
+    </div>
   );
 }
